@@ -1,0 +1,62 @@
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التفعيل";
+    Text = "l7h script v2"; -- L7h clan --
+    Duration = 5;
+})
+
+
+
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("l7h clan script", "BloodTheme")
+local Tab = Window:NewTab("SCRIPTS")
+local Section = Tab:NewSection("SCRIPTS")
+
+Section:NewButton("سكربت بلوكس فروت", "اقوي سكريبت تلفيل", function()
+    print("Clicked")loadstring(game:HttpGet('https://raw.githubusercontent.com/Script-Blox/Script/main/Script-Blox'))()
+end)
+
+
+Section:NewButton("ايم بوت", "Aimbot", function()
+    print("Clicked")loadstring(game:HttpGet(('https://pastebin.com/raw/Kqa7bpXm')))()
+end)
+
+Section:NewButton("سكريبت ماب البيوت الاصلي", "icehub", function()
+    print("Clicked")loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
+
+Section:NewButton("سكريبت ماب البيوت العربي", "سكريبت ماب البيوت", function()
+    print("Clicked")loadstring(game:HttpGet('https://raw.githubusercontent.com/Ndora1/Ndora1/main/Nokia%20Hub.lua'))()
+end)
+
+Section:NewButton("سكربت سكنات", "حط الايدي حق الشخص وينسخلك", function()
+    print("Clicked")
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\73\110\118\111\111\107\101\114\49\49\47\79\117\116\102\105\116\47\109\97\105\110\47\79\117\116\102\105\116\67\111\112\105\101\114\46\108\117\97\34\44\32\116\114\117\101\41\41\40\41\10")()
+end)
+
+Section:NewButton("سكريبت تحول", "يحولك للي تبيه", function()
+    print("Clicked")loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
+end)
+
+Section:NewButton("سكريبت ادمن", "سكريبت ادمن", function()
+    print("Clicked")loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+end)
+
+local Tab = Window:NewTab("تحكم ب الشخصية")
+local Section = Tab:NewSection("تحكم ب الشخصية")
+
+Section:NewSlider("سرعه", "سرعه شخصية", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewSlider("نط", "سرعه النط", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.jumpPower = s
+end)
+
+local Tab = Window:NewTab("credits")
+local Section = Tab:NewSection("credit")
+
+Section:NewButton("المنشئ batmangaming1923", "فارغ", function()
+    print("Clicked")
+end)
